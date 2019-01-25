@@ -26,13 +26,13 @@ function multiply(param1, param2){
 }
 
 function greeting(first, last){
-  return `Hello ${first} ${last}, nice to meet you!`
+  return `Hello ${first} ${last}, nice to meet you!`;
 }
 
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2,2,add);
+consume(2,2,add); //4
 consume(10,16,multiply); //160
 consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
@@ -42,6 +42,8 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
+
+Because `nestedfunction()` has access to three scope chains: its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
 
 
 const external = "I'm outside the function";
