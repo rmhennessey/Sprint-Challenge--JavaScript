@@ -30,22 +30,49 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach()
+    - no array returned
+    - iteration will occur for every item in the array no matter what
+
+.map() 
+    - returns an array
+    - convert something and put it in a new array
+    - find what you want to change and then create something new
+    - must have the RETURN statement or it will fail
+
 2. What is the difference between a function and a method?
+
+A method is a function that’s inside an object.
+
+Because methods always belong to a data type, they have a concept of self that functions do not. 
 
 3. What is closure?
 
+A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+
+Whenever a function is called by a preceding dot, the object before that dot is this.
+
+Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+
+Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
+
 5. Why do we need super() in an extended class?
+
+ We need it to access and call functions on an object's parent.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ x ] Create a forked copy of this project.
+- [ x ] Add PM as collaborator on Github.
+- [ x ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ x ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
@@ -66,15 +93,15 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [ x ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [ x ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [ x ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
